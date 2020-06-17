@@ -1,2 +1,0 @@
-include ':app', ':animationdemo1', ':animationdemo2', ':animationdemo3'
-rootProject.name='AnimationDemo'
