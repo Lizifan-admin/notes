@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+    android:oneshot="false"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@mipmap/meizi"
+          android:duration="80"/>
+    <item android:drawable="@mipmap/peiqi"
+          android:duration="80"/>
+    <item android:drawable="@mipmap/huluwa"
+          android:duration="80"/>
+</animation-list>
