@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">UpdateDemo</string>
+    <string name="btn_dialog_one">显示一个普通的dialog</string>
+    <string name="btn_dialog_two">显示一个带普通列表的dialog</string>
+    <string name="btn_dialog_three">显示一个带单选列表的dialog</string>
+    <string name="btn_dialog_four">显示一个带复选框的dialog</string>
+    <string name="message">这是一个简单的弹窗</string>
+    <string name="title1">第一</string>
+    <string name="title2">你喜欢什么</string>
+    <string name="title3">你喜欢吃什么</string>
+    <string name="title4">你喜欢玩什么</string>
+    <string name="suer">你点击了确定按钮</string>
+    <string name="cancel">你点击了取消按钮</string>
+</resources>
