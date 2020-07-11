@@ -1,0 +1,9 @@
+一个自定义时钟的实现，本人刚接触自定义view，记录下本人的问题和注意事项：
+   1.    关于onMeasure方法，通过获取父view的宽高确认，MeasureSpec.getMode方法获取viewGroup的specMode。  MeasureSpec.EXACTLY表示父布局为match_parent或具体值
+                                                                                                       MeasureSpec.AT_MOST表示父布局为wrap_content
+                                                                                                       MeasureSpec.UNSPECIFIED表示不确定父布局的值
+    关于canvas.rotate方法，可看作是坐标轴的旋转，旋转之前绘制的内容不会改变
+    关于canvas.restore()方法，还原至上一个save的状态，在这期间绘制的内容位置不变
+    
+    
+    具体绘制流程看看代码
