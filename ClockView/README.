@@ -1,4 +1,4 @@
-一个自定义时钟的实现，本人刚接触自定义view，记录下本人的问题和注意事项：
+一个自定义时钟的实现，记录下本人的问题和注意事项：
    1.    关于onMeasure方法，通过获取父view的宽高确认，MeasureSpec.getMode方法获取viewGroup的specMode。  MeasureSpec.EXACTLY表示父布局为match_parent或具体值
                                                                                                        MeasureSpec.AT_MOST表示父布局为wrap_content
                                                                                                        MeasureSpec.UNSPECIFIED表示不确定父布局的值
@@ -6,7 +6,11 @@
     关于canvas.restore()方法，还原至上一个save的状态，在这期间绘制的内容位置不变
     
     
-   自定义view的构造函数是一定要有的
+   自定义view的构造函数是一定要有的    只有一个参数Context context，new一个对象实例的时候会调用
+                                       两个参数，Context context,AttributeSet attrs，在xml中调用自定义view时会调用
+                                       三个参数，Context context,AttributeSet attrs, int defStyleAttr，自定义view中有自定义属性时调用
+   系统默认只会调用自定义View的前两个构造函数,至于第三个构造函数的调用,通常是我们自己在构造函数中主动调用的（例如,在第二个构造函数中调用第三个构造函数）  初始化的时候要注意
+   
     
     具体绘制流程看看代码
     
